@@ -126,6 +126,7 @@ body {
 }
 
 .sidebar_container .sidebar_buttom_menu {
+    background-color: rgb(158, 158, 163);
     position: absolute;
     border-top: 0.2rem solid var(--brand-color);
     width: 100%;
