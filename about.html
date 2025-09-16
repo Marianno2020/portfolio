@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_2.css">
+  <link rel="stylesheet" href="vendors/styles/style2.css">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/profile.jpg" type="image/x-icon">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/profile.jpg" type="image/x-icon">
 
-    <!-- Fontawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome + Devicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <title>Mr Marianno</title>
 </head>
@@ -54,25 +55,47 @@
                 <div class="left_image_box"></div>
             </div>
 
-            <!-- sidebar Content -->
-            <div class="sidebar_content">
-                <!-- Long name can be applied so easily -->
-                <h1>MANJARIVELO </h1>
-                <h2>Pierre Marianno</h2>
-                <p>Informaticien</p><h4>(UX/UI Designer et Développeur)</h4>
-                <p>Géomaticien</p><h4>(Technicien en SIG)</h4>
-                <!-- Social Medias -->
-                <div class="social_media">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
-            <!-- Sidebar Buttom Menu -->
-            <div class="sidebar_buttom_menu" id="sidebar_buttom_menu">
-                <i class="fa fa-bars" id="sidebar_menu_icon"></i>
-            </div>
+    <!-- Sidebar -->
+    <div class="sidebar_container">
+        <!-- Image -->
+        <div class="image">
+          <img src="img/profile.jpg" alt="Photo de profil de Pierre Marianno">
+          <div class="right_image_box"></div>
+          <div class="left_image_box"></div>
+        </div>
+  
+        <!-- Infos -->
+        <div class="sidebar_content">
+          <h1>MANJARIVELO</h1>
+          <h2>Pierre Marianno</h2>
+          <p>Informaticien</p>
+          <h4>(Formateur et Développeur)</h4>
+          <ul>
+            <li>- UX/UI Designer</li>
+            <li>- Développeur Mobile</li>
+            <li>- Développeur Web</li>
+          </ul>
+          <p>Géomaticien</p>
+          <h4>(Technicien en SIG)</h4>
+        </div>
+  
+        <!-- Sidebar Menu -->
+        <div class="sidebar_buttom_menu" id="sidebar_buttom_menu">
+          <i class="fa fa-bars" id="sidebar_menu_icon"></i>
+        </div>
+  
+        <ul class="sidebar_navigation" id="sidebar_navigation">
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- x Sidebar -->
+  
+      <!-- Content -->
+      <div class="content_container">
 
             <!-- Sidebar Navigation -->
             <ul class="sidebar_navigation" id="sidebar_navigation">
@@ -85,44 +108,122 @@
             </ul>
 
         </div>
-        <!-- content -->
-        <div class="content_container">
-            <!-- About Page -->
-            <div class="about_page">
-                <h2 class="title">About <span>Me &#128525; </span></h2>
-                <hr class="line">
-                <div class="about_content">
-                    <p class="about_text">Je suis informaticien et géomaticien passionné par 
-                        la résolution de problèmes complexes et la création de solutions innovantes.
-                         J’ai travaillé dans divers domaines de géomatique et l’informatique. 
-                         J’ai combiné les compétences en informatique avec l’expertise en géomatique.</p>
-                </div>
-                <div class="about_profile" style="border: 3px solid #04fab8 ; color: #080827;">
-                    <ul class="left_profile">
-                        <li><span class="profile_title">Date of Birth</span><span>12 June 1998</span></li>
-                        <li><span class="profile_title">Gender</span><span>Male</span></li>
-                        <li><span class="profile_title">Age</span><span>26 Years</span></li>
-                        <li><span class="profile_title">Maritial Status</span><span>Unmarried</span></li>
-                        <li><span class="profile_title">Nationalite</span><span>Malagasy</span></li>
-                        <li><span class="profile_title">Religion</span><span>FLM</span></li>
-                    </ul>
+    <!-- Content -->
+    <div class="content_container">
 
-                    <ul class="right_profile">
-                        <li><span class="profile_title">Profession</span><span>Data Processing</span></li>
-                        <li><span class="profile_title">Address</span><span>Madagascar, Fianaratsoa</span></li>
-                        <li><span class="profile_title">Contact</span><span>034 59 405 70 / 032 44 275 91</span></li>
-                        <li><span class="profile_title">Email</span><span>mariannopierre9@gmail.com</span></li>
-                        <li><span class="profile_title">Website</span><span>mariannowebsite.com</span></li>
-                        <li><span class="profile_title">Freelance</span><span>Available </span></li>
-                    </ul>
-                </div>
-
+        <!-- About Page -->
+        <div class="about_page">
+          <h2 class="title">About <span>Me &#128525;</span></h2>
+          <hr class="line">
+  
+          <div class="about_content">
+            <p class="about_text">
+              Je suis informaticien et géomaticien passionné par 
+              la résolution de problèmes complexes et la création de solutions innovantes.
+              J’ai travaillé dans divers domaines de géomatique et de l’informatique.
+            </p>
+          </div>
+  
+          <!-- Profil -->
+          <div class="about_profile" style="border: 3px solid #04fab8 ; color: #080827;">
+            <ul class="left_profile">
+              <li><span class="profile_title">Date de naissance</span><span>12 Juin 1998</span></li>
+              <li><span class="profile_title">Sexe</span><span>Homme</span></li>
+              <li><span class="profile_title">Âge</span><span>26 ans</span></li>
+              <li><span class="profile_title">État civil</span><span>Célibataire</span></li>
+              <li><span class="profile_title">Nationalité</span><span>Malagasy</span></li>
+              <li><span class="profile_title">Religion</span><span>FLM</span></li>
+            </ul>
+  
+            <ul class="right_profile">
+              <li><span class="profile_title">Profession</span><span>Formateur</span></li>
+              <li><span class="profile_title">Adresse</span><span>Madagascar, Fianaratsoa</span></li>
+              <li><span class="profile_title">Contact</span><span>034 59 405 70 / 032 44 275 91</span></li>
+              <li><span class="profile_title">Email</span><span>mariannopierre9@gmail.com</span></li>
+              <li><span class="profile_title">Site web</span><span>mariannocoaching.mg</span></li>
+              <li><span class="profile_title">Freelance</span><span>Disponible</span></li>
+            </ul>
+          </div>
+  
+          <!-- Skills -->
+          <div class="skills-icons">
+              <!-- Web -->
+              <i class="fa-brands fa-html5" style=" color: #E34F26;" title="HTML5"></i>
+              <i class="fa-brands fa-css3-alt" style="color: #1572B6;" title="CSS3"></i>
+              <i class="fa-brands fa-js" style="color: #F7DF1E;" title="JavaScript"></i>
+              <i class="fa-brands fa-bootstrap" style="color: #7952B3;" title="Bootstrap"></i>
+              <i class="fa-brands fa-react" style="color: #61DAFB;" title="React.js"></i>
+              <i class="fa-brands fa-vuejs" style="color: #42B883;" title="Vue.js"></i>
+              <i class="fa-brands fa-angular" style="color: #DD0031;" title="Angular"></i>
+              <i class="fa-brands fa-php" color: #777BB4; title="PHP"></i>
+            
+              <!-- Framework & backend -->
+              <i class="devicon-symfony-original colored" title="Symfony"></i>
+              <i class="devicon-laravel-plain colored" title="Laravel"></i>
+              <i class="devicon-codeigniter-plain colored" title="CodeIgniter"></i>
+              <i class="fa-brands fa-java" style="color: #007396;" title="Java"></i>
+              <i class="fa-brands fa-python" style="color: #3776AB;" title="Python"></i>
+            
+              <!-- Mobile -->
+              <i class="devicon-flutter-plain colored" title="Flutter"></i>
+              <i class="devicon-dart-plain colored" title="Dart"></i>
+              <i class="devicon-firebase-plain colored" title="Firebase"></i>
+            
+              <!-- Bases de données -->
+              <i class="devicon-mysql-plain colored" title="MySQL"></i>
+              <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+              <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+              <i class="devicon-sqlite-plain colored" title="SQLite"></i>
+            
+              <!-- Design -->
+              <i class="devicon-figma-plain colored" title="Figma"></i>
+              <i class="devicon-illustrator-plain colored" title="Illustrator"></i>
+              <i class="devicon-photoshop-plain colored" title="Photoshop"></i>
+              <i class="devicon-premierepro-plain colored" title="Premiere Pro"></i>
+            
+              <!-- Versioning & Conteneurs -->
+              <i class="fa-brands fa-git-alt" style="color: #F1502F;" title="Git"></i>
+              <i class="fa-brands fa-github" style="color: #181717;" title="GitHub"></i>
+              <i class="devicon-docker-plain colored" title="Docker"></i>
+            
+              <!-- Data & BI -->
+              <i class="devicon-r-plain colored" title="R"></i>
+              <i class="devicon-tableau-plain colored" title="Tableau"></i>
+              <i class="devicon-powerbi-plain colored" title="Power BI"></i>
+            
+              <!-- OS -->
+              <i class="fa-brands fa-windows" style="color: #0078D6;" title="Windows"></i>
+              <i class="fa-brands fa-linux" style="color: #FCC624;" title="Linux"></i>
+              <i class="fa-brands fa-android" style="color: #3DDC84;" title="Android"></i>
+              <i class="fa-brands fa-apple" style="color: #A2AAAD;" title="macOS / iOS"></i>
+            
+              <!-- IDE -->
+              <i class="devicon-vscode-plain colored" title="VS Code"></i>
+              <i class="devicon-netbeans-plain colored" title="NetBeans"></i>
+              <i class="devicon-eclipse-plain colored" title="Eclipse"></i>
+              <i class="devicon-androidstudio-plain colored" title="Android Studio"></i>
+              <i class="devicon-intellij-plain colored" title="IntelliJ"></i>
+            
+              <!-- Autres -->
+              <i class="fa-solid fa-project-diagram" title="UML / Merise"></i>
+              <i class="fa-solid fa-users" title="SCRUM"></i>
+              <i class="fa-solid fa-computer" title="Maintenance"></i>
+              <i class="fa-solid fa-file-word" title="Word"></i>
+              <i class="fa-solid fa-file-excel" title="Excel"></i>
+              <i class="fa-solid fa-envelope" title="Gmail"></i>
+              <i class="fa-solid fa-video" title="Zoom"></i>
             </div>
+  
         </div>
+      </div>
+    <!-- x Content -->
 
-
-        <script src="js/script.js"></script>
-       
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/scripts/script.min.js"></script>
+  <script src="vendors/scripts/process.js"></script>
+  <script src="vendors/scripts/layout-settings.js"></script>
 
     </ul>
 </body>
