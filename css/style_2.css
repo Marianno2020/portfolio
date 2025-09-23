@@ -38,3 +38,8 @@
 .fa-linux { color: #FCC624; }
 .fa-android { color: #3DDC84; }
 .fa-apple { color: #A2AAAD; }
+
+h3:hover{
+  color: blue;
+  background-color: #7952B3;
+}
